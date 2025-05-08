@@ -1,6 +1,6 @@
 {
   "bootstrapper_version": "1.0.0",
-  "newest_executor_version": "3.76.8",
+  "newest_executor_version": "3.76.9",
   "legacy_executor_version": "3.72.8",
   "downNewest": "n",
   "downLegacy": "y",

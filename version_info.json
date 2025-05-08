@@ -1,0 +1,9 @@
+{
+  "bootstrapper_version": "1.0.0",
+  "newest_executor_version": "3.76.8",
+  "legacy_executor_version": "3.72.8",
+  "downNewest": "n",
+  "downLegacy": "y",
+  "legacy_version_download_url": "https://github.com/ZoraraOfficial/ZoraraFiles/releases/download/ZoraraRelease1/ZoraraLegacy.zip",
+  "newest_version_download_url": "https://github.com/ZoraraOfficial/ZoraraFiles/releases/download/ZoraraRelease1/Zorara.zip"
+}

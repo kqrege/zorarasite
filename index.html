@@ -1,222 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zorara - Roblox Executor</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>realzorara</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    img {
+      margin-top: 40px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .discord-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #5865F2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .discord-button:hover {
+      background-color: #4752c4;
+    }
+  </style>
 </head>
 <body>
-    <!-- Custom cursor elements -->
-    <div class="cursor-dot" id="cursor-dot"></div>
-    <div class="cursor-outline" id="cursor-outline"></div>
-
-    <div class="container">
-        <!-- Background animated element -->
-        <div class="bg-animation">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-
-        <nav>
-            <div class="logo">
-                <span class="logo-text">Z<span class="logo-highlight">o</span>rara</span>
-                <div class="logo-glow"></div>
-            </div>
-            <a href="https://discord.gg/realzorara" class="discord-btn" target="_blank">
-                <i class="fab fa-discord"></i> Discord
-            </a>
-        </nav>
-        
-        <div class="hero">
-            <div class="content">
-                <h1>Zorara</h1>
-                
-                <div class="features">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="feature-details">
-                            <h3>UNC: <span class="highlight">87%</span> <i class="fas fa-check-circle check"></i></h3>
-                            <p>High compatibility rate</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="feature-details">
-                            <h3>Easy to Use UI <i class="fas fa-star star"></i></h3>
-                            <p>Intuitive design for all users</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <div class="feature-details">
-                            <h3>24/7 Support <i class="fas fa-bolt bolt"></i></h3>
-                            <p>Always available on Discord</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stats-container">
-                    <div class="stat">
-                        <div class="stat-number" id="downloadCount">160.2k+</div>
-                        <div class="stat-label">Downloads</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">4.8<i class="fas fa-star star-tiny"></i></div>
-                        <div class="stat-label">User Rating</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support</div>
-                    </div>
-                </div>
-                
-                <button class="download-btn" id="downloadBtn">
-                    <i class="fas fa-download"></i> Download
-                </button>
-            </div>
-        </div>
-
-        <!-- Showcase section -->
-        <div class="showcase">
-            <h2>Power. Performance. Precision.</h2>
-            <div class="showcase-container">
-                <div class="showcase-image floating">
-                    <img src="https://i.imgur.com/qQK0auZ.png" alt="Zorara UI" class="executor-ui">
-                    <div class="image-overlay"></div>
-                </div>
-                
-                <div class="showcase-text">
-                    <div class="showcase-feature">
-                        <i class="fas fa-rocket"></i>
-                        <div>
-                            <h3>Fast Execution</h3>
-                            <p>Execute scripts with minimal delay</p>
-                        </div>
-                    </div>
-                    <div class="showcase-feature">
-                        <i class="fas fa-lock"></i>
-                        <div>
-                            <h3>Advanced security</h3>
-                            <p>Advanced security to keep you safe</p>
-                        </div>
-                    </div>
-                    <div class="showcase-feature">
-                        <i class="fas fa-code"></i>
-                        <div>
-                            <h3>Script Hub Included</h3>
-                            <p>Access to premium scripts library</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonials section -->
-        <div class="testimonials">
-            <h2>What Users Say</h2>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Best executor I've used. Super reliable and the UI is clean!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>Alex_Gaming</h4>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"The support team is amazing. Fixed my issue within minutes!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>RobloxPro99</h4>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Never got banned using Zorara. Totally worth it!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>GameMaster42</h4>
-                            <div class="testimonial-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="downloadModal">
-            <div class="modal-content">
-                <h2>Choose Download Option</h2>
-                <div class="download-options">
-                    <a href="https://link-target.net/604950/zorara-installer" class="option linkvertise" target="_blank">
-                        <div class="option-icon">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="option-text">
-                            <h3>Linkvertise</h3>
-                            <p>Download via Linkvertise</p>
-                        </div>
-                    </a>
-                    <a href="https://lootdest.org/s?LftE9CWi" class="option lootlabs" target="_blank">
-                        <div class="option-icon">
-                            <i class="fas fa-box-open"></i>
-                        </div>
-                        <div class="option-text">
-                            <h3>Lootlabs</h3>
-                            <p>Download via Lootlabs</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="overlay" id="overlay"></div>
-    </div>
-
-    <script src="script.js"></script>
+  <img src="drift.png" alt="Drift">
+  <a href="https://discord.gg/realzorara" class="discord-button" target="_blank">Join Discord</a>
 </body>
-</html> 
+</html>
